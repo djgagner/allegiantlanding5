@@ -555,9 +555,9 @@ setInterval(function(){
 			    	if(data.address_components[i].types.indexOf("dropoff_zip")!=-1)
 			    	{
 			    		document.getElementById('dropoff_zip').value=data.address_components[i].long_name
-			    		if(document.getElementById('ShipCarToZip').value==""){
+			    		//if(document.getElementById('ShipCarToZip').value==""){
 			    			document.getElementById('ShipCarToZip').value=data.address_components[i].long_name
-			    		}
+			    		//}
 			    	}
 			    	document.getElementById('dropoff_country_id').value=1
 			    }
@@ -598,9 +598,9 @@ setInterval(function(){
 			    	if(data.address_components[i].types.indexOf("pickup_zip")!=-1)
 			    	{
 			    		document.getElementById('pickup_zip').value=data.address_components[i].long_name
-			    		if(document.getElementById('ShipCarFromZip').value==""){
+			    		//if(document.getElementById('ShipCarFromZip').value==""){
 			    			document.getElementById('ShipCarFromZip').value=data.address_components[i].long_name
-			    		}
+			    		//}
 			    	}
 			    	document.getElementById('pickup_country_id').value=1
 			    }
