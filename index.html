@@ -554,6 +554,7 @@ setInterval(function(){
 			    	}
 			    	if(data.address_components[i].types.indexOf("postal_code")!=-1)
 			    	{
+			    		console.log("here")
 			    		document.getElementById('dropoff_zip').value=data.address_components[i].long_name
 			    		//if(document.getElementById('ShipCarToZip').value==""){
 			    			document.getElementById('ShipCarToZip').value=data.address_components[i].long_name
