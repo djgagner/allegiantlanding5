@@ -420,16 +420,22 @@ function submit(){
   	shakeForm("ShipCarTo")
   	shouldReturn=true
   }
+  else{
+  	recolor("ShipCarTo")
+  }
   if(!document.getElementById("ShipCarFromZip").value){
   	shakeForm("ShipCarFromZip")
   	shouldReturn=true
+  }
+  else{
+  	recolor("ShipCarFromZip")
   }
   if(!document.getElementById("ShipCarToZip").value){
   	shakeForm("ShipCarToZip")
   	shouldReturn=true
   }
   else{
-  	recolor("ShipCarTo")
+  	recolor("ShipCarToZip")
   }
   if(!document.getElementById("ShipCarFrom").value){
   	shakeForm("ShipCarFrom")
