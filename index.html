@@ -640,8 +640,6 @@ function changerizer(id)
 	console.log("id", id)
 	var value = document.getElementById(id).value
 	console.log("this is the value", value)
-	
-	recolor(id)
 	if(id=="ShipCarFromZip")
 	{
 		document.getElementById('pickup_zip').value=value
@@ -649,15 +647,18 @@ function changerizer(id)
 	if(id=="ShipCarToZip")
 	{
 		document.getElementById('dropoff_zip').value=value
-	}	
+	}
+	recolor(id)
+		
 	
 	if(id=='ShipCarFrom'){
 		var shipTo;
-		
+		recolor("ShipCarFromZip")
 
 	}
 	else if(id=='ShipCarTo'){
 		var shipTo;
+		recolor("ShipCarToZip")
 		$.ajax({
 		  url: 'http://maps.google.com/maps/api/geocode/json?address='+encodeURIComponent(value),
 		  async: false,
