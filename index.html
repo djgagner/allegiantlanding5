@@ -552,7 +552,7 @@ setInterval(function(){
 			    		console.log("city", data.address_components[i].long_name)
 			    		document.getElementById('dropoff_city').value=data.address_components[i].long_name
 			    	}
-			    	if(data.address_components[i].types.indexOf("dropoff_zip")!=-1)
+			    	if(data.address_components[i].types.indexOf("postal_code")!=-1)
 			    	{
 			    		document.getElementById('dropoff_zip').value=data.address_components[i].long_name
 			    		//if(document.getElementById('ShipCarToZip').value==""){
@@ -595,7 +595,7 @@ setInterval(function(){
 			    		console.log("city", data.address_components[i].long_name)
 			    		document.getElementById('pickup_city').value=data.address_components[i].long_name
 			    	}
-			    	if(data.address_components[i].types.indexOf("pickup_zip")!=-1)
+			    	if(data.address_components[i].types.indexOf("postal_code")!=-1)
 			    	{
 			    		document.getElementById('pickup_zip').value=data.address_components[i].long_name
 			    		//if(document.getElementById('ShipCarFromZip').value==""){
